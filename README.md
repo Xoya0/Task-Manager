@@ -1,6 +1,6 @@
 # Task Manager
 
-A simple and efficient task management application that allows users to create, manage, and track their tasks. This application is built using [insert technologies used, e.g., React, Node.js, Express, etc.].
+A simple and efficient task management application that allows users to create, manage, and track their tasks. This application is built using React and Firebase.
 
 ## Features
 
@@ -12,10 +12,9 @@ A simple and efficient task management application that allows users to create, 
 
 ## Technologies Used
 
-- **Frontend**: [React](https://reactjs.org/), [Redux](https://redux.js.org/) (if applicable)
-- **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/)
-- **Database**: [MongoDB](https://www.mongodb.com/) (or any other database you are using)
-- **Styling**: [CSS/SCSS](https://sass-lang.com/) (or any other styling framework)
+- **Frontend**: [React](https://reactjs.org/)
+- **Backend**: [Firebase](https://firebase.google.com/) (for database and authentication)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) and custom CSS
 
 ## Installation
 
@@ -34,11 +33,14 @@ A simple and efficient task management application that allows users to create, 
    npm install
    ```
 
-4. Create a `.env` file in the root directory and add your environment variables. Example:
+4. Create a `.env` file in the root directory and add your Firebase configuration variables. Example:
    ```
-   PORT=5000
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
+   REACT_APP_FIREBASE_API_KEY=your_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_app_id
    ```
 
 5. Start the application:
@@ -48,7 +50,7 @@ A simple and efficient task management application that allows users to create, 
 
 ## Usage
 
-- Visit `http://localhost:5000` in your browser to access the application.
+- Visit `http://localhost:3000` (or the port specified in your setup) in your browser to access the application.
 - Register a new account or log in with an existing account.
 - Start creating and managing your tasks!
 
